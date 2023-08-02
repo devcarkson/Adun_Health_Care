@@ -1,0 +1,91 @@
+.chat-container {
+    display: none; /* Hide the chat container initially */
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* Position the chatbot at the bottom left corner */
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.user-message {
+    color: blue;
+}
+
+.bot-message {
+    color: green;
+}
+
+.chat-icon {
+    /* Your icon styling */
+    size: 70px;
+    z-index: 1;
+    background-color: #06A3DA;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 8%; /* Adjusted the bottom position to be relative to the screen height */
+    left: 5%; /* Adjusted the left position to be relative to the screen width */
+    cursor: pointer;
+}
+
+.chat-input {
+    /* Your input styling */
+    display: none; /* Hide the input initially */
+    position: fixed;
+    bottom: 16%; /* Adjusted the bottom position to be relative to the screen height */
+    left: 5%; /* Adjusted the left position to be relative to the screen width */
+    width: 80%; /* Adjusted the width to be relative to the screen width */
+    max-width: 300px; /* Set a maximum width to prevent it from becoming too wide on large screens */
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff; /* Background color for the input box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    z-index: 1;
+}
+
+.chat-input input[type="text"] {
+    /* Styling for the input field */
+    border: none;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    outline: none;
+    background-color: #fff;
+}
+
+.chat-input button {
+    /* Styling for the send button */
+    margin-top: 5px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #06A3DA; /* Background color for the button */
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .chat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        bottom: 15%; /* Adjusted the bottom position for smaller screens */
+        left: 81%; /* Adjusted the left position for smaller screens */
+    }
+
+    .chat-input {
+        bottom: 23%; /* Adjusted the bottom position for smaller screens */
+        left: 29%; /* Adjusted the left position for smaller screens */
+        width: 90%; /* Adjusted the width for smaller screens */
+    }
+}

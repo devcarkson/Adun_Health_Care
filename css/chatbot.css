@@ -1,0 +1,73 @@
+.chat-container {
+    display: none; /* Hide the chat container initially */
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* Position the chatbot at the bottom left corner */
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.user-message {
+    color: blue;
+}
+
+.bot-message {
+    color: green;
+}
+
+.chat-icon {
+    /* Your icon styling */
+    size: 50px;
+    z-index: 1;
+    background-color: #06A3DA;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 9em;
+    left: 79em;
+    cursor: pointer;
+}
+
+.chat-input {
+    /* Your input styling */
+    display: none; /* Hide the input initially */
+    position: fixed;
+    bottom: 12em;
+    left: 71em;
+    width: 200px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff; /* Background color for the input box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    z-index: 1;
+}
+
+.chat-input input[type="text"] {
+    /* Styling for the input field */
+    border: none;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    outline: none;
+    background-color: #fff;
+}
+
+.chat-input button {
+    /* Styling for the send button */
+    margin-top: 5px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #06A3DA;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
